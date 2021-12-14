@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sounds.js" charset="utf-8" defer></script>
+    <!-- підключаю js-файл -->
+</head>
+
+<body>
+        <fieldset style="margin-top: 20px;">
+            <legend style="margin-left: 96px;">Введіть цифру від 1 до 4</legend>
+            <!-- підпис вмісту батьківського елемента fieldset  -->
+            <input id="number" style="width: 63px; text-align: center; margin-left: 96px;" type="text"><br>
+            <!-- текстовий інпут -->
+            <input style="margin-top:10px; margin-left: 96px;" type="submit" onclick="switchFoo()">
+            <!-- інпут типу кнопки + при кліку запускається функція -->
+        </fieldset>
+        <!-- створила так званий набір керування формою-->
+
+    <div class="main">
+        <!-- помістила елементи в один блок та в рядок  -->
+        <div>
+            <center>
+                <img id="pianoIcon" width="150px" height="150px" style="border-radius: 80px;"
+                    src="images/piano-play.png" alt="">
+                <!-- додаю фото -->
+                <p>1</p>
+            </center>
+        </div>
+        <div>
+            <center>
+                <img id="guitarIcon" width="150px" height="150px" style="border-radius: 80px;"
+                    src="images/guitar-play.png" alt="">
+                <p>2</p>
+            </center>
+        </div>
+        <div>
+            <center>
+                <img id="violinIcon" width="150px" height="150px" src="images/violin-play.png"
+                    alt="">
+                <p>3</p>
+            </center>
+        </div>
+        <div>
+            <center>
+                <img id="drumsIcon" width="150px" height="150px" src="images/drums-play.png"
+                    alt="">
+                <p>4</p>
+            </center>
+        </div>
+    </div>
+    <audio id="piano">
+        <source src="piano-song-the-entertainer.mp3" type="audio/mp3">
+    </audio>
+    <!-- додаю аудіо і джерело із посиланням на музику -->
+    <audio id="guitar">
+        <source src="jdi-acoustic-guitar-jam-2-032314-10.mp3" type="audio/mp3">
+    </audio>
+    <audio id="violin">
+        <source src="zvuk-skripki.mp3" type="audio/mp3">
+    </audio>
+    <audio id="drums">
+        <source src="z_uk-shamanskih-barabano_-z_uk-shamanskih-barabano_.mp3" type="audio/mp3">
+    </audio>
+</body>
+
+</html>

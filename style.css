@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* стилі для всього сайту */
+
+img {
+    cursor: pointer;
+}
+/* курсор при наведені на фото */
+
+body {
+    background-color: rgb(245, 227, 253);
+}
+/* задній фон сайту */
+
+.main {
+    height: 80vh;
+    /* висота */
+    width: 100%;
+    /* ширина */
+    display: flex;
+    /* флекс display */
+    justify-content: space-around;
+    /* відстань навколо елементів */
+    align-items: center;
+    /* елементи по центру */
+}
+
+center p {
+    font-size: 22px;
+    /* розмір тексту в елементі center*/
+}
